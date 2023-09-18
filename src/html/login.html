@@ -1,0 +1,42 @@
+<div class="container">
+    <hr>
+    <h1>List of books</h1>
+    <hr>
+    <div>
+        <div class="row" id="books">
+        </div>
+    </div>
+</div>
+
+<div id="editBookModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Book</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form id="editForm" action="http://localhost:3000/checkIn" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" name="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" name="password" id="password">
+                    </div>
+
+                    <!--Other fields-->
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Our JS file-->
+<!--<script src="../utils/itemlist.js"></script>-->
